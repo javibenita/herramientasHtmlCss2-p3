@@ -1,0 +1,36 @@
+.header {
+  text-align: right;
+  border-bottom: 1px solid $primary;
+
+  &__brand {
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: $primary;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background: linear-gradient(135deg, $primary-bg-2, $primary-bg-3);
+    border: 2px solid $primary;
+    border-radius: 1.5rem;
+    box-shadow: 0 2px 8px $primary;
+    transition: background 0.3s;
+
+    &:hover {
+      color: $secondary;
+      text-decoration: none;
+      background: linear-gradient(135deg, $primary-bg-3, $primary-bg-2);
+    }
+  }
+  &__link {
+    &:hover {
+      color: $secondary;
+    }
+    &:is(.active) {
+      color: $secondary;
+    }
+  }
+}

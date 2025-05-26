@@ -3,6 +3,8 @@
  * Do not include SCSS code in this file.
  */
 
+/* para v4 @import "tailwindcss/index.css";*/
+
 /**
  * Import variables
  */
@@ -15,15 +17,27 @@
  * see commented examples below
  */
 
-// @import "some-node-module";
-// @import "@some-company/some-node-module";
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
+
+@import "~hover.css/scss/hover";
+
+/*@import "tailwindcss";*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /**
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
 
-@import "layouts/home";
+.card {
+  @apply flex flex-col items-center bg-primary-bg-3 rounded-lg shadow-md border border-primary w-full xl:w-[calc(25%-2rem)] lg:w-[calc(33%-2rem)] sm:w-[calc(50%-2rem)];
+}
+
+.heading {
+  @apply bg-primary text-white text-center py-2 mb-2 text-[calc(1.375rem+1.5vw)];
+}
 
 /**
  * Do NOT include anything else in this file!

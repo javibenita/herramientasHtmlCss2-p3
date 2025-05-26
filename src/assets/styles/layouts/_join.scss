@@ -1,0 +1,93 @@
+@layer base, layout, components, utilities;
+
+@layer base {
+  .registration {
+    // resets locales o reglas generales
+    box-sizing: border-box;
+  }
+}
+
+@layer layout {
+  .registration {
+    padding-top: 2rem;
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 2rem;
+      background-color: $primary-bg-3;
+      border-radius: 1rem;
+    }
+  }
+}
+
+@layer components {
+  .registration {
+    &__title {
+      width: 100%;
+      color: $primary-alt;
+      text-align: center;
+      background-color: $primary;
+    }
+
+    &__intro {
+      margin-bottom: 2rem;
+      font-size: 1rem;
+      color: $primary;
+    }
+
+    &__captcha {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      max-width: 800px;
+      margin: auto;
+      container-type: inline-size;
+    }
+
+    &__captcha-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* width y height equivalentes a repartir entre 8 el espacio del contenedor, teniendo en cuenta el gap */
+      /* width: calc(#{100 / cols}cqw - #{(cols - 1) / cols} * #{gap})*/
+      width: item-size(8, 0.4rem);
+      height: item-size(8, 0.4rem);
+      font-size: 2rem;
+      cursor: pointer;
+      border: 2px solid $primary;
+      border-radius: 0.5rem;
+
+      @container (max-width: 500px) {
+        width: item-size(4, 0.4rem);
+        height: item-size(4, 0.4rem);
+      }
+    }
+
+    &__captcha-alert {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__submit {
+      width: 100%;
+      font-weight: 600;
+    }
+  }
+}
+@layer utilities {
+  .captcha-color1 {
+    background-color: color(display-p3 1 0.08 0); /*ROJO*/
+  }
+  .captcha-color2 {
+    background-color: hwb(133 4% 36%); /*VERDE*/
+  }
+  .captcha-color3 {
+    background-color: lab(55 -5.17 -60); /*AZUL*/
+  }
+  .captcha-color4 {
+    background-color: lch(88% 121 86); /*AMARILLO*/
+  }
+}
