@@ -10,7 +10,15 @@
  * Write any other JavaScript below
  */
 
-+( function() {
++(function () {
   const university = "UOC";
   console.log(`Hello, ${university}!`);
-} )();
+
+  // navbar toggle
+  const toggleButton = document.getElementById("navbar-toggler");
+  const navbar = document.getElementById("navbarNav");
+
+  toggleButton.addEventListener("click", () => {
+    navbar.classList.toggle("hidden");
+  });
+})();

@@ -17,14 +17,13 @@
  * see commented examples below
  */
 
-@import "npm:@fortawesome/fontawesome-free/css/all.css";
-
-@import "~hover.css/scss/hover";
-
-/*@import "tailwindcss";*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
+
+@import "~hover.css/scss/hover";
 
 /**
  * Import layouts
@@ -37,6 +36,10 @@
 
 .heading {
   @apply bg-primary text-white text-center py-2 mb-2 text-[calc(1.375rem+1.5vw)];
+}
+
+.number-circle {
+  @apply flex items-center justify-center w-8 h-8 rounded-full bg-primary text-white font-bold;
 }
 
 /**
