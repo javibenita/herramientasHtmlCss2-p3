@@ -30,18 +30,6 @@
  * It's a best practice to use a different partial for each page
  */
 
-.card {
-  @apply flex flex-col items-center bg-primary-bg-3 rounded-lg shadow-md border border-primary w-full xl:w-[calc(25%-2rem)] lg:w-[calc(33%-2rem)] sm:w-[calc(50%-2rem)];
-}
-
-.heading {
-  @apply bg-primary text-white text-center py-2 mb-2 text-[calc(1.375rem+1.5vw)];
-}
-
-.number-circle {
-  @apply flex items-center justify-center w-8 h-8 rounded-full bg-primary text-white font-bold;
-}
-
 /**
  * Do NOT include anything else in this file!
  */
