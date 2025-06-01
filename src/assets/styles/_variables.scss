@@ -1,18 +1,5 @@
 @use "sass:color";
 
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-  "Segoe UI Symbol";
-$font-family-serif: "Georgia", "Times New Roman", serif;
-
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
-
-$mqMinWidth: 420px;
-
-/* new */
-
 .card {
   @apply flex flex-col items-center bg-primary-bg-3 rounded-lg shadow-md border border-primary w-full xl:w-[calc(25%-2rem)] lg:w-[calc(33%-2rem)] sm:w-[calc(50%-2rem)];
 }
@@ -24,58 +11,3 @@ $mqMinWidth: 420px;
 .number-circle {
   @apply flex items-center justify-center w-8 h-8 rounded-full bg-primary text-white font-bold;
 }
-
-/*@theme {
-  --color-primary: #12495a;
-  --color-primary-alt: #269bbf;
-  --color-secondary: red;
-  --color-primary-bg-1: #12495a;
-  --color-primary-bg-2: #79acbc;
-  --color-primary-bg-3: #eaecec;
-
-  --font-logo: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  --font-sans: "Verdana", "Arial", sans-serif;
-
-  --breakpoint-xs: 30rem;
-}*/
-
-/*
-$primary: #12495a; 
-$primary-alt: white;
-$secondary: red; 
-$primary-bg-1: color.scale(
-  color.scale($primary, $saturation: -0%),
-  $lightness: 0%
-);
-$primary-bg-2: color.scale(
-  color.scale($primary, $saturation: -50%),
-  $lightness: 50%
-);
-$primary-bg-3: color.scale(
-  color.scale($primary, $saturation: -90%),
-  $lightness: 90%
-);*/
-
-/*se sobreescriben los valores de bootstrap*/
-/*$body-color: $primary;
-$font-family-sans-serif: "Verdana", "Arial", sans-serif;
-$headings-line-height: 1.8;*/
-
-/*button*/
-/*$btn-font-weight: 600;*/
-
-/*navbar*/
-/*$navbar-light-color: $primary;
-$navbar-light-hover-color: $secondary;
-$nav-link-font-weight: 600;
-$navbar-nav-link-padding-x: 1rem;*/
-
-/*card*/
-/*$card-spacer-y: 1.5rem;
-$card-spacer-x: 1.5rem;
-$card-title-color: $primary;
-$card-subtitle-color: color.scale($primary, $lightness: 30%);
-$card-bg: $primary-bg-3;*/
-
-/*alert*/
-/*$alert-border-radius: 1rem;*/
